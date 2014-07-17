@@ -4,12 +4,11 @@ R-Programming course on Coursera
 Assignment 2
 ---------------
 
-Introduction
---------------
+###Introduction
+
 This second programming assignment will require you to write an R function is able to cache potentially time-consuming computations. For example, taking the mean of a numeric vector is typically a fast operation. However, for a very long vector, it may take too long to compute the mean, especially if it has to be computed repeatedly (e.g. in a loop). If the contents of a vector are not changing, it may make sense to cache the value of the mean so that when we need it again, it can be looked up in the cache rather than recomputed. In this Programming Assignment will take advantage of the scoping rules of the R language and how they can be manipulated to preserve state inside of an R object.
 
-Example: Caching the Mean of a Vector
---------------------------------------
+###Example: Caching the Mean of a Vector
 
 In this example we introduce the <<- operator which can be used to assign a value to an object in an environment that is different from the current environment. Below are two functions that are used to create a special object that stores a numeric vector and cache's its mean.
 
@@ -18,6 +17,8 @@ set the value of the vector
 get the value of the vector
 set the value of the mean
 get the value of the mean
+
+<!-- -->
 makeVector <- function(x = numeric()) {
         m <- NULL
         set <- function(y) {
@@ -31,6 +32,7 @@ makeVector <- function(x = numeric()) {
              setmean = setmean,
              getmean = getmean)
 }
+
 The following function calculates the mean of the special "vector" created with the above function. However, it first checks to see if the mean has already been calculated. If so, it gets the mean from the cache and skips the computation. Otherwise, it calculates the mean of the data and sets the value of the mean in the cache via the setmean function.
 
 cachemean <- function(x, ...) {
@@ -45,8 +47,7 @@ cachemean <- function(x, ...) {
         m
 }
 
-Assignment: Caching the Inverse of a Matrix
---------------------------------------------
+###Assignment: Caching the Inverse of a Matrix
 
 Matrix inversion is usually a costly computation and their may be some benefit to caching the inverse of a matrix rather than compute it repeatedly (there are also alternatives to matrix inversion that we will not discuss here). Your assignment is to write a pair of functions that cache the inverse of a matrix.
 
@@ -79,8 +80,8 @@ https://github.com/rdpeng/ProgrammingAssignment2
 
 7c376cc5447f11537f8740af8e07d6facc3d9645
 
-Grading
---------
+###Grading
+
 
 This assignment will be graded via peer assessment.
 Please submit the URL pointing to your GitHub repository containing the completed R code for this assignment. (NOTE: Please submit the URL for the entire repository, not for any individual files.) 
