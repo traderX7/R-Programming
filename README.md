@@ -1,7 +1,7 @@
 R-Programming course on Coursera
 =================================
 
-Assignment 2
+Programming Assignment 2
 ---------------
 
 ###Introduction
@@ -62,11 +62,11 @@ For this assignment, assume that the matrix supplied is always invertible.
 
 In order to complete this assignment, you must do the following:
 
-Fork the GitHub repository containing the stub R files at https://github.com/rdpeng/ProgrammingAssignment2 to create a copy under your own account.
-Clone your forked GitHub repository to your computer so that you can edit the files locally on your own machine.
-Edit the R file contained in the git repository and place your solution in that file (please do not rename the file).
-Commit your completed R file into YOUR git repository and push your git branch to the GitHub repository under your account.
-Submit to Coursera the URL to your GitHub repository that contains the completed R code for the assignment.
+1. Fork the GitHub repository containing the stub R files at https://github.com/rdpeng/ProgrammingAssignment2 to create a copy under your own account.
+2. Clone your forked GitHub repository to your computer so that you can edit the files locally on your own machine.
+3. Edit the R file contained in the git repository and place your solution in that file (please do not rename the file).
+4. Commit your completed R file into YOUR git repository and push your git branch to the GitHub repository under your account.
+5. Submit to Coursera the URL to your GitHub repository that contains the completed R code for the assignment.
 In addition to submitting the URL for your GitHub repository, you will need to submit the 40 character SHA-1 hash (as string of numbers from 0-9 and letters from a-f) that identifies the repository commit that contains the version of the files you want to submit. You can do this in GitHub by doing the following
 
 Going to your GitHub repository web page for this assignment
@@ -77,9 +77,9 @@ You will see a list of commits that you have made to this repository. The most r
 
 A valid submission will look something like (this is just an example!)
 
-https://github.com/rdpeng/ProgrammingAssignment2
+  https://github.com/rdpeng/ProgrammingAssignment2
 
-7c376cc5447f11537f8740af8e07d6facc3d9645
+  7c376cc5447f11537f8740af8e07d6facc3d9645
 
 ###Grading
 
