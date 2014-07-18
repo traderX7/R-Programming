@@ -55,7 +55,7 @@ Matrix inversion is usually a costly computation and their may be some benefit t
 Write the following functions:
 
 1. `makeCacheMatrix` : This function creates a special "matrix" object that can cache its inverse.
-2. `cacheSolve` : This function computes the inverse of the special "matrix" returned by `makeCacheMatrix` above. If the inverse has already been calculated (and the matrix has not changed), then the cachesolve should retrieve the inverse from the cache.
+2. `cacheSolve` : This function computes the inverse of the special "matrix" returned by `makeCacheMatrix` above. If the inverse has already been calculated (and the matrix has not changed), then the `cachesolve` should retrieve the inverse from the cache.
 
 Computing the inverse of a square matrix can be done with the `solve` function in R. For example, if `X` is a square invertible matrix, then `solve(X)` returns its inverse.
 
@@ -69,7 +69,7 @@ In order to complete this assignment, you must do the following:
 4. Commit your completed R file into YOUR git repository and push your git branch to the GitHub repository under your account.
 5. Submit to Coursera the URL to your GitHub repository that contains the completed R code for the assignment.
 
-In addition to submitting the URL for your GitHub repository, you will need to submit the 40 character SHA-1 hash (as string of numbers from 0-9 and letters from a-f) that identifies the repository commit that contains the version of the files you want to submit. You can do this in GitHub by doing the following
+In addition to submitting the URL for your GitHub repository, you will need to submit the `40 character SHA-1 hash` (as string of numbers from 0-9 and letters from a-f) that identifies the repository commit that contains the version of the files you want to submit. You can do this in GitHub by doing the following
 
 1. Going to your GitHub repository web page for this assignment
 
