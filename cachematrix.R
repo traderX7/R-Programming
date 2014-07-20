@@ -1,37 +1,37 @@
 ### programming assignment 2 for "R Programming" course on Coursera ###
 ###
 ## comments that give an overall description of what my functions do!
-### Inverse function is time-consuming to calculate, especially when it's used in a loop function.
-### It's possible to save time if cache is used instead of calculate repeatedly.
+### Inverse function is time-consuming to calculate, especially when it's used within a loop function.
+### It's possible to save time if it's to cache the value instead of calculate repeatedly.
 
-## a short comment describing this function
-### In new programming, it just replace mean in makeVector and cacheMean with inverse in core parts.
+## short comment describing this function
+### In new functions, it just replaces "mean" in makeVector and cacheMean with "inverse" in core parts.
 
 makeCacheMatrix <- function(x = matrix()) {
-  m <- NULL
-  set <- function(y){
-    x <<- y
-    m <<- NULL
-  }
-  get <- function()x
-  setinverse <- function(inverse) m <<- inverse
-  getinverse <- function() m
-  list(set = set, get = get,setinverse = setinverse,
-       getinverse = getinverse)
+    m <- NULL
+    set <- function(y){
+      x <<- y
+      m <<- NULL
+    }
+    get <- function()x
+    setinverse <- function(inverse) m <<- inverse
+    getinverse <- function() m
+    list(set = set, get = get, setinverse = setinverse,
+         getinverse = getinverse)
   
 }
 
-## a short comment describing this function
+## short comment describing this function
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
-  m <- x$getinverse()
-  if(!is.null(m)) {
-    message("getting cached data")
-    return(m)
-  }
-  data <- x$get()
-  m <- solve(data, ...)
-  x$setinverse(m)
-  m
+    m <- x$getinverse()
+    if(!is.null(m)) {
+      message("getting cached data")
+      return(m)
+    }
+    data <- x$get()
+    m <- solve(data, ...)
+    x$setinverse(m)
+    m
 }
