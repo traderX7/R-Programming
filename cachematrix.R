@@ -1,11 +1,11 @@
-### programming assignment 2 for R Programming on Coursera course ###
+### programming assignment 2 for "R Programming" course on Coursera ###
 ###
-## Put comments here that give an overall description of what your functions do
+## comments that give an overall description of what my functions do!
 ### Inverse function is time-consuming to calculate, especially when it's used in a loop function.
 ### It's possible to save time if cache is used instead of calculate repeatedly.
 
-## Write a short comment describing this function
-### In new programming, it just replace mean in makeVector and cacheMean with inverse.
+## a short comment describing this function
+### In new programming, it just replace mean in makeVector and cacheMean with inverse in core parts.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
   
 }
 
-## Write a short comment describing this function
+## a short comment describing this function
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
