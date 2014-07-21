@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## short comment describing this function
-
+### If cached value exists, it's returned. Otherwise, newly calculated.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
     m <- x$getinverse()
@@ -30,6 +30,7 @@ cacheSolve <- function(x, ...) {
       message("getting cached data")
       return(m)
     }
+  ## If there is no cashed data, then use the new data
     data <- x$get()
     m <- solve(data, ...)
     x$setinverse(m)
