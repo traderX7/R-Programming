@@ -5,7 +5,7 @@
 ### It's possible to save time if it's to cache the value instead of calculate repeatedly.
 
 ## short comment describing this function
-### In new functions, it just replaces "mean" in makeVector and cacheMean with "inverse" in core parts.
+### New functions modify the example functions of makeVector and cacheMean to replaces "mean" with "inverse".
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
